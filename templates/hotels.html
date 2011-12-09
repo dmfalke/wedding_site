@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block "title" %}Hotel Information{% endblock %}
+{% block "content" %}
+<p>Below is a list of hotels with blocked off rooms for wedding guests for both Friday and Saturday nights.
+  Please make your reservation no later than April 1.
+  Reserve rooms by phone and mention  the <i>Dewar/Falke wedding</i> for discounts.</p>
+
+<p>For the purpose of planning, the ceremony will begin a 2:00 pm, with the reception to follow immediately, ending around 6:00pm.
+  While we intentionally planned the wedding times so that you may easily make it back to the metro Atlanta area,
+  we encourage you consider sticking around Athens and checking out the <a href="http://www.athenstwilight.com/">Twilight Criterium</a>.
+  It's a really fun opportunity to experience downtown Athens! All hotels are within convenient walking distance of downtown.</p>
+
+<h2>Holiday Inn</h2>
+<dl>
+  <dt>Address</dt>
+  <dd> 197 East Broad St., Athens, GA  30603</dd>
+  <dt>Contact</dt>
+  <dd>Hotel Front Desk: 706-549-4433
+    <br />Hotel Fax: 706-548-3031
+    <br />{{ "http://www.hi-athens.com"|urlizetrunc:45 }}
+  </dd>
+</dl>
+  
+<h2>Hilton Garden Inn *</h2>
+<p><b>*</b><em>It has recently come to our attention that the parking deck for the Hilton Garden Inn is going to be blocked off from 4pm until Midnight on Saturday, due to the bicycle race downtown. Feel free to call or email us with any questions you might have about this.</em></p>
+<dl>
+  <dt>Address</dt>
+  <dd>390 East Washington Street, Athens, GA  30601</dd>
+  <dt>Contact</dt>
+  <dd>706-353-6800 <br /> {{"http://hiltongardeninn.hilton.com/en/gi/hotels/index.jhtml?ctyhocn=AHNDTGI"|urlizetrunc:45}}</dd>
+</dl>
+  
+<h2>Courtyard Marriott</h2>
+<dl>
+  <dt>Address</dt>
+  <dd>166 North Finley Avenue, Athens, GA  30601</dd>
+  <dt>Contact</dt>
+  <dd>706-369-7000 <br /> {{"http://www.marriott.com/hotels/travel/ahncy-courtyard-athens-downtown/"|urlizetrunc:45}}</dd>
+</dl>
+
+{% endblock %}

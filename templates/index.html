@@ -1,0 +1,73 @@
+<!DOCTYPE HTML> 
+<html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/cufon.js"></script>
+    <script type="text/javascript" src="/js/Bubbly_Hills_400.font.js"></script>
+    <link rel="stylesheet" href="/css/site.css"/>
+    <title>Kathleen and Dave are Getting Married!</title>
+    <style type="text/css">
+      body {
+        background: white url(http://dl.dropbox.com/u/4081378/kathleen%26dave_tree.jpg) scroll center -450px;
+      }
+      .frames_left {
+        float: left;
+      }
+      .frames_right {
+        float: right;
+      }
+      .frames_list li {
+        /*width: 300px;*/
+        height: 200px;
+        margin-top: 80px;
+      }
+      .frames_list img {
+        border: none;
+        vertical-align: bottom;
+      }
+      ul.frames_list {
+        list-style: none;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        Cufon.replace('.header');
+
+        //var date_img = $($(".header").find("img")[0]);
+        //var wm_img = $($(".header").find("img")[1]);
+        //var frames = [];
+        //$(".frames_list").find("img").each(function(idx, frame) {
+        //    frames.push($(frame).width());
+        //});
+        //$(window).resize(function() {
+        //    var diff = $(document.body).width() / (938 + 334 + 20);
+        //    if (diff < 1) {
+        //        date_img.width(334 * (diff - .01));
+        //        wm_img.width(938 * (diff - .01));
+        //        $(".frames_list").find("img").each(function(idx, frame) {
+        //            $(frame).width(frames[idx] * (diff - .01));
+        //        });
+        //    }
+        //}).resize();
+      });
+    </script>
+  </head>
+  <body>
+    <div style="padding-top:0px; padding-bottom:0px; margin:0px auto 1px;"><br /></div>
+    {% include "_header.html" %}
+    <div class="frames_left">
+      <ul class="frames_list">
+        <li><a href="/engagement_photos/"><img src="/images/nav/engagement_photos.png"/></a></li>
+        <li><a href="/wedding_photos/"><img src="/images/nav/wedding_photos.png"/></a></li>
+      </ul>
+    </div>
+    <div class="frames_right">
+      <ul class="frames_list">
+        <li><a href="/honeymoon_photos/"><img src="/images/nav/honeymoon_photos.png"/></a></li>
+        <li><a href="/ceremony/"><img src="/images/nav/ceremony.png"/></a></li>
+      </ul>
+    </div>
+    <script type="text/javascript"> Cufon.now(); </script>
+  </body>
+</html>

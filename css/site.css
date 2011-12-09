@@ -1,0 +1,142 @@
+body {
+  background: lightBlue url(http://dl.dropbox.com/u/4081378/long_grass1.jpg) fixed bottom center;
+  font-family: Arial, Helvetic, Sans-serif;
+  margin: 0;
+}
+#background-image {
+  position: fixed;
+  top: -500px;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+}
+.text_container {
+  /*
+  background: black;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  */
+  color: white;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+}
+.header {
+  color: black;
+  background: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* add positioning for opacity in IE */
+  zoom: 1;
+  margin: 0;
+  padding: 0 10px;
+  text-align: right;
+  /*height: 74px;*/
+}
+.info_left {
+  /*float: left;*/
+  width: 30%;
+  background: black;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  margin-top: 100px;
+}
+.info_right {
+  float: left;
+}
+.header h1 {
+  font-size: 40px;
+  margin: 1px 0;
+}
+.header h2 {
+  margin: 1px 0;
+  padding-bottom: 6px;
+}
+a {
+  color: inherit !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+dt {
+  font-weight: bold;
+  font-size: large;
+}
+dd {
+  margin-bottom: 10px;
+}
+.left {
+  width: 12em;
+  float: left;
+}
+.nav_menu {
+  background: black;
+  opacity: 0.7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity='70');
+  /* add positioning for opacity in IE */
+  zoom: 1;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  /*behavior: url('/css/ie-css3.htc');*/
+}
+.nav_menu a {
+  color: white !important;
+  font-weight: bold !important;
+}
+.nav_links {
+  list-style: none;
+  padding-left: 0;
+}
+.nav_links li {
+  padding: 10px;
+}
+#count_down {
+  background: black;
+  color: white;
+  opacity: 0.7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity='70');
+  /* add positioning for opacity in IE */
+  zoom: 1;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  text-align:center;
+  font-weight:bold;
+  margin-top:32px
+}
+.page {
+  min-width: 985px;
+  max-width: 1200px;
+  width: 985px;
+  margin: 1px auto 0px;
+  padding: 8px 8px 40px 8px;
+  background-color: lightBlue;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  /*
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  */
+}
+#main_page {
+  min-height: 560px;
+}
+.page h1 {
+  text-align: center;
+  margin: 6px;
+}
+.content {
+  /*
+  margin-left: 220px;
+  margin: 0 auto;
+  max-width: 925px;
+  */
+  min-height: 335px;
+  padding: 12px 24px;
+  margin-left: 12em;
+}

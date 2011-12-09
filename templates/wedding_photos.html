@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block "head_extra" %}
+    <script type="text/javascript" src="/js/slimbox2.js"></script>
+    <script type="text/javascript" src="/js/jquery.EmbedPicasaGallery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#gallery").EmbedPicasaGallery('dmfalke', {
+            matcher: /Kathleen\sand\sDave's\sWedding/i,
+            size: 144,
+            msg_loading_list: "Getting pictures...",
+            msg_back: "Back to album list"
+          });
+        });
+    </script>
+    <link rel="stylesheet" href="/css/slimbox2.css" type="text/css" media="screen" />
+    <style type="text/css">
+      .pic-thumb {
+        display:none;
+      }
+    </style>
+  {% endblock %}
+
+  {% block "title" %}Kathleen and Dave's Wedding Photos{% endblock %}
+  {% block "content" %}
+    <div id="gallery"></div>
+  {% endblock %}
+

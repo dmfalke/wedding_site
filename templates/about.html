@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block "head_extra" %}
+    <script type="text/javascript" src="/js/slimbox2.js"></script>
+    <script type="text/javascript" src="/js/jquery.EmbedPicasaGallery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#gallery").EmbedPicasaGallery('dmfalke', {
+            matcher: /engagement/i,
+            size: 144,
+            msg_loading_list: "Getting pictures...",
+            msg_back: "Back to album list"
+          });
+        });
+    </script>
+    <link rel="stylesheet" href="/css/slimbox2.css" type="text/css" media="screen" />
+    <style type="text/css">
+      .pic-thumb {
+        display:none;
+      }
+    </style>
+  {% endblock %}
+
+  {% block "title" %}About Kathleen and Dave{% endblock %}
+  {% block "content" %}
+    <img src="/images/daveandkathleen.jpg"/>
+    <!--<p>Kathleen and Dave met during the Fall semester of 1999 at the University of Georgia in Creswell Hall dormitory. One night, Dave was walking through the lobby of Creswell, near the media room, when he saw his friend watching TV with the most beautiful girl he has ever seen. At that moment, Dave decided to say "Hi" to his friend, in an effort to have him introduce him to this stunning girl. Luckily, Dave's friend introduced him to his friend, Kathleen. Dave and Kathleen ended up staying up all night that night talking about anything and everything, ending up in Bolton Dining Hall when it opened, at 6 a.m. Dave and Kathleen continued to court each other at Bolton Dining Hall, until they began officially dating the following semester.</p>-->
+    <h3>Dave's story</h3>
+    <p>It was the Fall semester of 1999 at the University of Georgia when I first noticed Kathleen.
+      I had seen her around Creswell Hall a few times before, and thought, “Wow, she's beautiful!” but I never worked up the nerve to talk to her.
+      It wasn't until around Thanksgiving of that year that I decided to just go for it and introduce myself.
+      I was walking through the lobby of Creswell, near the media room, when I saw my friend watching TV with Kathleen.
+      I walked into the media room, said hello to my friend, and stood there until he introduced me to this stunning girl.</p>
+    <p>The three of us hung out, watching movies for a while, and Kathleen and I ended up staying up all night
+      that night talking about anything and everything, ending our night in Bolton Dining Hall when it opened at 6 a.m.
+      I was immediately taken by her sense of humor and willingness to watch me eat a plateful of sausage.
+      I continued to find reasons to be around Kathleen, including convincing her that I was fluent in German,
+      walking with her to class in the morning, and, of course, rushing to Bolton Dining Hall after my 6:30
+      intro to philosophy class (amazingly, she was always there).
+      This went on for a couple of months, until we had our first real date and went out for chimichangas.
+      I don't think a week has gone by since then that we haven't gone out for Mexican food. Kathleen is truly my soulmate.</p>
+
+    <h3>Kathleen's story</h3>
+    <p>When I first met Dave in the Fall of 1999 (our 1st year of college), he was hiding from my friend Anne-Marie behind a sofa.
+      She really liked him;I didn't see what the big deal was... I hadn't really noticed him before.
+      After I distracted Anne-Marie, and ushered Dave to safety, Dave and I stayed up all night talking,
+      laughing, and I think watching that really bad Kafka movie with Jeremy Irons.
+      It was the first time I was awake early enough to get breakfast at the dining hall.
+      Dave ate a whole bunch of sausage and I was immediately impressed.
+      I was also impressed by how terrified he was of Anne-Marie.</p>
+    <p>After our fun night of hanging out I found myself making more and more reasons to see Dave.
+      I liked him a lot. He was so much calmer and more thoughtful than other people my age and
+      also he wore sweater vests and did not own a pair of blue jeans (which is hard to believe now).
+      Most importantly, he understood my sense of humor, and I his, and that is a rarity that anyone
+      who has tried to decipher one of my giggle bouts can understand.
+      After several months of dining hall companionship, meeting up at  various shows,
+      and unsuccessful German language study sessions at Blue Sky and Perks
+      (which in retrospect were really just flirting), we went on a real date and ate some
+      Chimichangas together, for the first time, as a date kind of thing.
+      There is still no one I enjoy spending time with more than Dave.</p>
+
+    <div><img src="/images/dave.jpg"/><img src="/images/kathleen.jpg"/></div>
+    <p>Ever since, Kathleen and Dave have been inseparable, and are so happy and excited to be able to share their love for one another with their friends and family.</p>
+    <div id="gallery"></div>
+  {% endblock %}
+

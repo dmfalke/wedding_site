@@ -1,0 +1,40 @@
+<!DOCTYPE HTML> 
+<html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kathleen and Dave are Getting Married!</title>
+    <link rel="stylesheet" href="/css/site.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/cufon.js"></script>
+    <script type="text/javascript" src="/js/Bubbly_Hills_400.font.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        Cufon.replace('.header');
+        //var date_img = $($(".header").find("img")[0]);
+        //var wm_img = $($(".header").find("img")[1]);
+        //$(window).resize(function() {
+        //    var diff = $(document.body).width() / (938 + 334 + 20);
+        //    if (diff < 1) {
+        //        date_img.width(334 * (diff - .01));
+        //        wm_img.width(938 * (diff - .01));
+        //    }
+        //}).resize();
+      });
+    </script>
+    {% block "head_extra" %}{% endblock %}
+  </head>
+  <body>
+    <div class="page" style="padding-top:0px; padding-bottom:0px; margin:0px auto 1px;"><br /></div>
+    {% include "_header.html" %}
+    <div class="page" id="main_page">
+      <div class="left">
+        {% include "_nav_menu.html" %}
+        {% comment %}{% include "_count_down.html" %}{% endcomment %}
+      </div>
+      <img style="float:right;" src="/images/bird_cluster.png"/>
+      <h1>{% block "title" %}{% endblock %}</h1>
+      <div class="content">{% block "content" %}{% endblock %}</div>
+    </div>
+    <script type="text/javascript"> Cufon.now(); </script>
+  </body>
+</html>
