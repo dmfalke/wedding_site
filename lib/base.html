@@ -21,19 +21,29 @@
         //}).resize();
       });
     </script>
-    {% block "head_extra" %}{% endblock %}
+    [% INCLUDE head_extra %]
   </head>
   <body>
     <div class="page" style="padding-top:0px; padding-bottom:0px; margin:0px auto 1px;"><br /></div>
-    {% include "_header.html" %}
+    <div class="header">
+      <h1 style="text-align:center">Kathleen and Dave's Wedding</h1>
+      <h2 style="text-align:center">April 30, 2011 &#0151; Athens, GA</h2>
+    </div>
     <div class="page" id="main_page">
       <div class="left">
-        {% include "_nav_menu.html" %}
-        {% comment %}{% include "_count_down.html" %}{% endcomment %}
+        <img src="/images/bird_cluster_2.png"/>
+        <div class="nav_menu">
+          <ul class="nav_links">
+            <li><a href="/engagement_photos/">Engagement Photos</a></li>
+            <li><a href="/wedding_photos/">Wedding Photos</a></li>
+            <li><a href="/honeymoon_photos/">Honeymoon Photos</a></li>
+            <li><a href="/ceremony/">Ceremony</a></li>
+          </ul>
+        </div>
       </div>
       <img style="float:right;" src="/images/bird_cluster.png"/>
-      <h1>{% block "title" %}{% endblock %}</h1>
-      <div class="content">{% block "content" %}{% endblock %}</div>
+      <h1>[% title %]</h1>
+      <div class="content">[% INCLUDE content %]</div>
     </div>
     <script type="text/javascript"> Cufon.now(); </script>
   </body>

@@ -1,12 +1,10 @@
-{% extends "base.html" %}
-
-{% block "head_extra" %}
+[% BLOCK head_extra %]
     <script type="text/javascript" src="/js/slimbox2.js"></script>
     <script type="text/javascript" src="/js/jquery.EmbedPicasaGallery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
           $("#gallery").EmbedPicasaGallery('dmfalke', {
-            matcher: /Isla\sMujeres/i,
+            matcher: /engagement/i,
             size: 144,
             msg_loading_list: "Getting pictures...",
             msg_back: "Back to album list"
@@ -19,10 +17,9 @@
         display:none;
       }
     </style>
-  {% endblock %}
-
-  {% block "title" %}Kathleen and Dave's Honeymoon Photos{% endblock %}
-  {% block "content" %}
-    <div id="gallery"></div>
-  {% endblock %}
-
+[% END %]
+[% title = "Kathleen and Dave's Engagement Photos" %]
+[% BLOCK content %]
+  <div id="gallery"></div>
+[% END %]
+[% INCLUDE base.html %]

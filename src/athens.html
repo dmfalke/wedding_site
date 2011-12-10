@@ -1,7 +1,6 @@
-{% extends "base.html" %}
-
-{% block "title" %}Athens{% endblock %}
-{% block "content" %}
+[% title = "Athens" %]
+[% BLOCK head_extra %][% END %]
+[% BLOCK content %]
 <!--<div style="height:250px;width:250px;border:1px solid black">Picture of us on cannon</div>-->
 
 <h2>Things to do</h2>
@@ -38,4 +37,5 @@
   <li><b><a href="http://www.globeathens.com/">The Globe</a></b> &mdash; British pub-style restaurant with a nice assortment of beers, burgers, sandwiches, and sides.</li>
   <li><b><a href="http://trappezepub.com/">Trappeze Pub</a></b> &mdash; Another great restaurant/pub with a giant selection of craft and specialty beers and a creative menu including Kathleen's favorite: the Avocado Reuben. Staff will help you find the perfect beer and beer flights are now available for tasting!</li>
 </ul>
-{% endblock %}
+[% END %]
+[% INCLUDE base.html %]
