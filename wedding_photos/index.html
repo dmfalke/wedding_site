@@ -1,4 +1,7 @@
-[% BLOCK head_extra %]
+---
+layout: base
+title: Kathleen and Dave's Wedding Photos
+head_extra: |
     <script type="text/javascript" src="/js/slimbox2.js"></script>
     <script type="text/javascript" src="/js/jquery.EmbedPicasaGallery.min.js"></script>
     <script type="text/javascript">
@@ -17,10 +20,6 @@
         display:none;
       }
     </style>
-[% END %]
+---
 
-[% title = "Kathleen and Dave's Wedding Photos" %]
-[% BLOCK content %]
   <div id="gallery"></div>
-[% END %]
-[% INCLUDE base.html %]

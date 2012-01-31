@@ -10,18 +10,9 @@
     <script type="text/javascript">
       $(document).ready(function() {
         Cufon.replace('.header');
-        //var date_img = $($(".header").find("img")[0]);
-        //var wm_img = $($(".header").find("img")[1]);
-        //$(window).resize(function() {
-        //    var diff = $(document.body).width() / (938 + 334 + 20);
-        //    if (diff < 1) {
-        //        date_img.width(334 * (diff - .01));
-        //        wm_img.width(938 * (diff - .01));
-        //    }
-        //}).resize();
       });
     </script>
-    [% INCLUDE head_extra %]
+    {{ page.head_extra }}
   </head>
   <body>
     <div class="page" style="padding-top:0px; padding-bottom:0px; margin:0px auto 1px;"><br /></div>
@@ -42,8 +33,8 @@
         </div>
       </div>
       <img style="float:right;" src="/images/bird_cluster.png"/>
-      <h1>[% title %]</h1>
-      <div class="content">[% INCLUDE content %]</div>
+      <h1>{{ page.title }}</h1>
+      <div class="content">{{ content }}</div>
     </div>
     <script type="text/javascript"> Cufon.now(); </script>
   </body>

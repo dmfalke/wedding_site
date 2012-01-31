@@ -1,5 +1,5 @@
 body {
-  background: lightBlue url(http://dl.dropbox.com/u/4081378/long_grass1.jpg) fixed bottom center;
+  background: lightBlue url(/images/long_grass1.jpg) fixed bottom center;
   font-family: Arial, Helvetic, Sans-serif;
   margin: 0;
 }

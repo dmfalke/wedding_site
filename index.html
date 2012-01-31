@@ -33,29 +33,15 @@
     <script type="text/javascript">
       $(document).ready(function() {
         Cufon.replace('.header');
-
-        //var date_img = $($(".header").find("img")[0]);
-        //var wm_img = $($(".header").find("img")[1]);
-        //var frames = [];
-        //$(".frames_list").find("img").each(function(idx, frame) {
-        //    frames.push($(frame).width());
-        //});
-        //$(window).resize(function() {
-        //    var diff = $(document.body).width() / (938 + 334 + 20);
-        //    if (diff < 1) {
-        //        date_img.width(334 * (diff - .01));
-        //        wm_img.width(938 * (diff - .01));
-        //        $(".frames_list").find("img").each(function(idx, frame) {
-        //            $(frame).width(frames[idx] * (diff - .01));
-        //        });
-        //    }
-        //}).resize();
       });
     </script>
   </head>
   <body>
     <div style="padding-top:0px; padding-bottom:0px; margin:0px auto 1px;"><br /></div>
-    [% INCLUDE _header.html %]
+    <div class="header">
+      <h1 style="text-align:center">Kathleen and Dave's Wedding</h1>
+      <h2 style="text-align:center">April 30, 2011 &#0151; Athens, GA</h2>
+    </div>
     <div class="frames_left">
       <ul class="frames_list">
         <li><a href="/engagement_photos/"><img src="/images/nav/engagement_photos.png"/></a></li>

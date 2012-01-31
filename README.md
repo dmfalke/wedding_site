@@ -2,4 +2,4 @@ This website was created to disribute information about my wedding to guests and
 
 After the wedding, we posted pictures from both the wedding and the honeymoon.
 
-The website is generated using [ttree](http://search.cpan.org/~abw/Template-Toolkit-2.22/lib/Template/Tools/ttree.pod).
+The website is generated using [jekyll](http://jekyllrb.com/).
