@@ -1,5 +1,5 @@
 body {
-  background: lightBlue url(/images/long_grass1.jpg) fixed bottom center;
+  background: lightBlue url(../images/long_grass1.jpg) fixed bottom center;
   font-family: Arial, Helvetic, Sans-serif;
   margin: 0;
 }
@@ -80,7 +80,7 @@ dd {
   border-radius: 7px;
   padding-top: 1px;
   padding-bottom: 1px;
-  /*behavior: url('/css/ie-css3.htc');*/
+  /*behavior: url('../css/ie-css3.htc');*/
 }
 .nav_menu a {
   color: white !important;
